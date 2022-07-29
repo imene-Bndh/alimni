@@ -1,0 +1,80 @@
+
+.head{
+    padding: 20px 0;
+    color: var(--text);
+}
+
+.logo h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.head .icon{
+    margin-left: 6%;
+}
+
+/*_____________header______________*/
+
+header{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 30px;
+}
+
+header li{
+    margin-right: 40px;
+}
+
+header ul li a {
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header ul li a:hover{
+    color: var(--hover);
+}
+
+.start{
+    background-color: var(--hover);
+    padding: 1% 2.5%;
+    color: var(--text);
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.mobile-nav-button{
+    display:none;
+}
+
+@media screen and (max-width:800px){
+    .start{
+        clip-path: none;
+        padding: 2% 3%;
+    }
+    header{
+        margin: 0%;
+        background-color: var(--hover);
+        position: relative;
+    }
+    header ul.flexSB{
+        display: none;
+    }
+    .mobile-nav-button{
+        display:block;
+        background: none;
+        color : var(--text);
+        font-size: 15px;
+        padding-right : 7%;
+    }
+    .mobile-nav{
+        position : absolute;
+        padding: 2.5%;
+        top:55%;
+        width: 100%;
+        background-color: rgba(30, 178, 166, 0.486) ;
+    }
+    header ul li {
+        margin-bottom: 0.75%;
+        margin-top: 1%;
+        margin-left: 0%;
+    }
+}
