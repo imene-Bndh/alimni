@@ -1,7 +1,10 @@
 :root{
   --text : white;
-  --hover : #1eb2a6;
+  /* --hover : #1eb2a6; */
+  --hover : #9affff;
   --background : rosybrown;
+  --textBlue : #0b2548;
+  --textBlueLighter : #114374;
 }
 
 body{
@@ -9,6 +12,10 @@ body{
   margin: 0;
   box-sizing: border-box;
   background-color: var(--background);
+  background-image: url("./images/b13.jpg");   
+  background-size:cover;
+  background-attachment: fixed;
+  /* position: absolute; */
   /* background-color: #1eb2a6; */
 }
 
@@ -22,12 +29,12 @@ h1{
   justify-content: space-between;
 }
 .container{
-  max-width: 85%;
+  max-width: 90%;
   margin: auto;
 }
 
 .social{
-  width: 20%;
+  width: 30%;
   text-align: right;
 }
 
@@ -59,3 +66,115 @@ button{
   border: none;
   font-size: 100%;
 }
+
+.row{
+  width: 50%;
+}
+
+button{
+  padding: 17px 30px;
+  background-color: var(--hover);
+  color: var(--textBlue);
+  font-weight: 500;
+  border: none;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor:pointer;
+  box-shadow: 0 24px 36px -11px rgba(154 255 255 /35%);
+}
+
+button i {
+  margin-left: 20px;
+}
+
+button:hover{
+  box-shadow: none;
+}
+
+#heading {
+  text-align: center;
+  padding: 40px 0;
+  padding-right: 10%;
+}
+
+#heading h3{
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--hover);
+  text-transform: uppercase;
+}
+
+#heading h1{
+  font-size: 220%;
+  /* margin-left:5%; */
+  text-transform: capitalize;
+}
+
+p{
+  line-height: 30px;
+  font-size: 110%;
+}
+
+
+.about{
+  background-color: rgba(255, 255, 255, 0.699);
+  max-width: 95.5%;
+  margin: auto;
+  height: 100vh;
+  padding-top: 2%;
+  color: var(--textBlueLighter);
+  font-weight: 500;
+}
+
+.pageInfo{
+  text-align: center;
+}
+
+.pageInfo h1{
+  font-weight: 400;
+  font-size: 400%;
+}
+
+.pageInfo h2{
+  font-weight: 500;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* __________________________________________________________________________ */
+
+@media screen and (max-width:800px){
+  body{
+    background-image: url("./images/b17.png");   
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: var(--textBlue);
+    background-position: center;
+  }
+  .row{
+    width: 100%;
+  }
+  button{
+    padding: 0;
+    margin: 0%;
+    padding: 1.5% 1.5%;
+    font-size: 95%;
+    font-weight: 500;
+  }
+  .row button i{
+    display:none;
+  }
+  #heading h1{
+    font-size: 150%;
+    text-align: center;
+  }
+  .row{
+    text-align:justify;
+    font-size: 95%;
+  }
+}
+

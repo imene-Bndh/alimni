@@ -8,15 +8,15 @@ const Head = () => {
             <section className='head' >
                 <div className="container flexSB">
                     <div className="logo">
-                        <h1>ALIMNI</h1>
-                        <span>ONLINE EDUCATION & LEARNING</span>
+                            <h1>EDUTUBE</h1>
+                            <span>ONLINE EDUCATION & LEARNING</span>
                     </div>
                     <div className="social">
-                        <i className="icon"><FaFacebookF/></i>
-                        <i className="icon"><BsInstagram/></i>
-                        <i className="icon"><BsYoutube/></i>
+                        <i className="icon"><FaFacebookF /></i>
+                        <i className="icon"><BsInstagram /></i>
+                        <i className="icon"><BsYoutube /></i>
                     </div>
-                </div>        
+                </div>
             </section>
         </div>
     )

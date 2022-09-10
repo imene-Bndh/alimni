@@ -16,14 +16,10 @@ const Header = () => {
                         onClick={() => setIsClicked(false)}
                     >
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/courses">All Courses</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/team">Team</Link></li>
-                        <li><Link to="/pricing">Pricing</Link></li>
-                        <li><Link to="/journal">Journal</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/courses">Courses</Link></li>
                     </ul>
-                    <button className="start">GET CERTIFICATE</button>
+                    
+                    <button className="start"><Link to="/mycourses">MY COURSES</Link> </button>                   
                     <button className='mobile-nav-button' onClick={()=>{setIsClicked(!isClicked)}}>
                         {!isClicked? <i> <FaBars/> </i>:<i> <FaTimes/> </i>}
                     </button>
